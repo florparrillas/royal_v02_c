@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(0.25turn, #000, #060607, #39373f);
+    font-size: 16px;
+    margin: 0;
+}
+.container{
+    width: 1341px;
+}
+.main{
+    padding-top: 257px;
+}
+.padd-section{
+    padding: 65px 0;
+}
+
+.btn_learn_more{
+    margin-top: 67px;
+    
+}
+.btn_learn_more a{
+    text-decoration: none;
+    color: #D7B867;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.56rem;
+    padding: 10px;
+    border: 1px #D7B867 solid;
+    border-radius: 50px;
+    padding: 22px 42px;
+    line-height: 25px;
+}
+.btn_learn_more a:hover{
+    color: #000;
+    background-image: url(../img/royal_1920.png);
+}
+/*------------------HEADER------------------*/
+.header{
+    background: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+.header_img{
+    background-image: url(../img/header_cover.png);
+    background-repeat: repeat-x;
+    height: 169px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+.header_c_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    height: 88px;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1341px;
+}
+.header_nav a{
+    text-decoration: none;
+    color: #D7B867;
+    font-size: 1.25rem;
+    font-family: 'Montserrat';  
+    transition: all .1s ease;
+    letter-spacing: 2px;
+    padding: calc(10px + 2px) calc(24px + 2px);
+}
+.header_nav a:hover{
+    border: 2px solid #D7B867;
+    padding: 10px 24px;
+}
+
+/*Sec. Welcome Page*/
+.welcome-page{
+    height: 910px;
+    position: relative;
+    width: 100%;
+}
+
+  .welcome-page::before{
+    content: "";
+    background: rgba(0, 0, 0, .35);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+} 
+.welcome-page_img_cover{
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -20
+}
+
+.welcome-page_img_welcome{
+  
+    background-image: url('../img/royal_1920.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-page_img_welcome h2{
+    font-size: 4.37rem;
+    color: #000;
+    font-family: 'Cormorant Garamond';
+    font-weight: normal;
+    text-align: center;
+}
+.welcome-page_info_btn{
+    text-align: center;
+    margin-top: 88px;
+}
+.welcome-page_info_btn h1{
+    color: #D7B867;
+    font-size: 10rem;
+    font-weight: 300;
+    font-family: 'Cormorant Garamond';
+    text-align: center;
+    margin: 0;
+}
+.welcome-page_info_btn p{
+    color: #D7B867;
+    font-size: 2.5rem;
+    font-weight: 200;
+    line-height: 2.5rem;
+    font-family: 'Cormorant Garamond';
+    text-align: center;
+    margin: 0 auto;
+   padding-top: 62px;
+   padding-bottom: 44px;
+      max-width: 945px; 
+}
+.welcome-page_info_btn_c_btn{
+    margin-top: 67px;
+    width: auto;
+}
+.welcome-page_info_btn_c_btn a{
+    text-decoration: none;
+    color: #D7B867;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.56rem;
+    padding: 10px;
+    border: 1px #D7B867 solid;
+    border-radius: 50px;
+}
+
+
+/*Sec Unique Product*/
+.product_card{
+    text-align: center;
+    padding-bottom: 127px;
+}
+
+.title-section{
+    text-align: center;
+    font-family: 'Cormorant Garamond';
+    color: #D7B867;
+    font-size: 5.62rem;
+    margin: 0 0 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.title-section_line_left, .title-section_line_right{
+    height: 3px;
+    width: 20%;
+    background: #D7B867;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.title-section_line_left::after, .title-section_line_right::after{
+    content: "";
+    background-image: url(../img/circle.png);
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+    display: block;
+    position: absolute
+}
+.title-section_line_left::after{
+    right: -25px;
+}
+.title-section_line_right::after{
+    left: -25px;
+}
+.product_card_cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 124px;
+}
+.product_card_cards_front, .product_card_cards_back{
+    width: 576px;
+}
+.background_sections_trail{
+    background-image: url(../img/bg-section-1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    width: 100%;
+}
+
+
+/*Sec. Choose Us*/
+.choose_us{
+    text-align: center;
+    padding-bottom: 200px;
+}
+.section_info{
+    width: 100%;
+    /* max-width: 1255px; */
+    color: #D7B867;
+    font-size: 2.5rem;
+    font-family: 'Cormorant Garamond';
+    font-weight: normal;
+    text-align: center;
+    /* padding: 15px 70px 70px */
+    padding: 61px 0 117px 0;
+}
+.w_paragraph {
+    max-width: 1255px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+/*Sec. Explore World*/
+.explore_world{
+    text-align: center;
+    padding-bottom: 210px;
+}
+
+/*Sec. Benefits*/
+.benefits_associating{
+    text-align: center;
+    padding-bottom: 210px;
+}
+.benefits_associating_c_items{
+    padding-top: 200px;
+    padding-bottom: 180px;
+}
+.benefits_associating_c_items_ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0 95px;
+}
+.benefits_associating_c_items_ul li{
+    color: #D7B867;
+    font-size: 2.5rem;
+    font-family: 'Cormorant Garamond';
+    padding: 0 23px;
+}
+.benefits_associating_c_items_ul li img{
+    width: 100%;
+    max-width: 165px;
+    transform: translateX(10%);
+}
+
+/*Sec. Explore Destinations*/
+.explore_destinations{
+    text-align: center;
+    padding-bottom: 190px;
+}
+.explore_destinations_ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding-bottom: 60px
+}
+.explore_destinations_ul li a {
+    width: 362px;
+    height: 362px;
+    max-width: 362px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+.explore_destinations_ul li a img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    transform: translate(4.7%, 4.7%)
+}
+.explore_destinations_ul li a span{
+    color: #fbf5a9;
+    font-size: 50px;
+    line-height: 80px
+}
+
+.explore_destinations_ul li a span:hover{
+    color: #D7B867;
+}
+/*------------------------------------ OUR RESORTS -------------------------------*/
+.parteners_resorts{
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+/*---------------FOOTER-----------*/
+.footer_display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.footer_c_info{
+    max-width: 1361px;
+    margin-top: 134px;
+    margin-bottom: 88px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_c_info_form{
+    width: 50%;
+}
+.footer_c_info_form p{
+    color: #D7B867;
+    font-size: 1.8rem;
+    font-family: 'Cormorant Garamond';
+    margin-bottom: 32px;
+}
+.footer_c_info_form form input{
+    border: 1px solid #D7B867;
+    width: 411px;
+    height: 87px;
+    font-family: 'Cormorant Garamond';
+    font-size: 1.8rem;
+    color: #D7B867;
+    background: transparent;
+}
+.footer_c_info_form form{
+    display: flex;
+}
+.footer_c_info_form form button{
+    border: 1px solid #D7B867;
+    width: 155px;
+    height: 87px;
+    background-image: url(../img/royal_1920.png);
+    font-family: 'Cormorant Garamond';
+    font-size: 1.8rem;
+    color: #000;
+}
+.info_contact{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.info_contact img{
+    width: 30px;
+    height: 25px;
+    margin-right: 11px;
+}
+.info_contact p{
+    height: 25px;
+    color: #D7B867;
+    font-size: 1.8rem;
+}
+.footer_ul li{
+    list-style: none;
+}
+.footer_ul li a{
+    text-decoration: none;
+    color: #D7B867;
+    font-size: 2.5rem;
+    font-family: 'Cormorant Garamond';
+}
+.footer_under{
+    height: 139px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_under div{
+    margin: 0 139px;
+}
+.footer_under_reserved{
+    color: #D7B867;
+    font-family: 'Cormorant Garamond';
+    font-size: 1.8rem;
+}
+.footer_under_termins a{
+    text-decoration: none;
+    color: #D7B867;
+    font-family: 'Cormorant Garamond';
+    font-size: 1.8rem;
+}
