@@ -208,11 +208,26 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 124px;
+    max-width: 1300px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    margin-left: auto;
+    margin-right: auto
 }
-.product_card_cards_front, .product_card_cards_back{
+.product_card_cards_front{
     width: 576px;
+    position: relative;
+    z-index: 100;
+}
+.product_card_cards_back{
+    width: 470px;
+    height: 269px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: all .5s ease;
+    position: relative;
 }
 .background_sections_trail{
     background-image: url(../img/bg-section-1.png);
@@ -220,6 +235,11 @@ body{
     background-position: right;
     background-size: cover;
     width: 100%;
+}
+.product_card_cards_back:hover{
+    transform: rotate(00deg);
+    width: 576px;
+    height: 329px;
 }
 
 
