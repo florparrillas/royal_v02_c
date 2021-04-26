@@ -19,11 +19,11 @@ body{
     padding: 65px 0;
 }
 
-.btn_learn_more{
+.btn_background_gold{
     margin-top: 67px;
     
 }
-.btn_learn_more a{
+.btn_background_gold a{
     text-decoration: none;
     color: #D7B867;
     font-family: 'Montserrat';
@@ -35,7 +35,7 @@ body{
     padding: 22px 42px;
     line-height: 25px;
 }
-.btn_learn_more a:hover{
+.btn_background_gold a:hover{
     color: #000;
     background-image: url(../img/royal_1920.png);
 }
@@ -317,11 +317,218 @@ body{
 .explore_destinations_ul li a span:hover{
     color: #D7B867;
 }
-/*------------------------------------ OUR RESORTS -------------------------------*/
+/*------------------------------------ PAGE OUR RESORTS -------------------------------*/
 .parteners_resorts{
     text-align: center;
     padding-top: 90px;
     padding-bottom: 100px;
+}
+
+/*------------------------------------ PAGE MEMBERSHIPS -------------------------------*/
+.top_packages{
+    text-align: center;
+    margin-bottom: 200px;
+}
+.top_packages_detail{
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+
+}
+.package_details_all h3{
+    /* margin-bottom: 25px;
+    margin-top: 15px; */
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-size: 5rem;
+    color: #000;
+    font-family: 'Cormorant Garamond';
+}
+.package_details_c_ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.package_details_ul{
+    list-style: none;
+    color: #000;
+    font-size: 1.87rem;
+    font-family: 'Cormorant Garamond';
+    width: 90%; 
+}
+.package_details_ul li{
+    display: flex;
+    padding: 13px 0;
+}
+.package_details_ul li:first-child, .package_details_ul li:last-child{
+    padding: 0 0;
+}
+.package_details_ul li img{
+    width: 100%;
+    max-width: 51px;
+    height: 51px;
+}
+.package_details_silver{
+    width: 100%;
+    max-width: 420px;
+    height: 640px;
+    background: linear-gradient(0.30turn, #92a7aa, #f3f3f3, #2c4246);
+    text-align: center;
+    position: relative;
+}
+.package_details_golden{
+    width: 100%;
+    max-width: 466px;
+    height: 705px;
+    background: linear-gradient(0.30turn, #8f6c29, #ecd996, #2f2412);
+    text-align: center;
+    position: relative;
+    z-index: 80;
+}
+.package_details_bronze{
+    width: 100%;
+    max-width: 420px;
+    height: 640px;
+    background: linear-gradient(0.30turn, #68452c, #e7c7b0, #301b12);
+    text-align: center;
+    position: relative;
+}
+.btn_contact{
+margin-top: 200px;
+position: relative;
+}
+
+.btn_contact a{
+    text-decoration: none;
+    color: #D7B867;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.56rem;
+    padding: 10px;
+    border: 1px #D7B867 solid;
+    border-radius: 50px;
+    padding: 22px 42px;
+    line-height: 25px;
+}
+.btn_contact a:hover{
+    color: #000;
+    background-image: url(../img/royal_1920.png);
+}
+/*------------------------------------ PAGE CONTACT -------------------------------*/
+.contact{
+    text-align: center;
+}
+.contact_form{
+    width: 100%;
+    text-align: center;
+   
+}
+.contact_form_form{
+    max-width: 1040px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+.contact_form_form_inputs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+.contact_form_form_inputs input{
+    width: 45%;
+    max-width: 475px;
+    height: 88px;
+    border: 1px solid #D7B867;
+    background: transparent;
+    color: #D7B867;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.contact_form_form_textarea textarea{
+    border: 1px solid #D7B867;
+    background: transparent;
+    color: #D7B867;
+    height: 289px;
+    width: 100%;
+    resize: none;
+}
+::-webkit-input-placeholder { 
+    color: #D7B867;
+    font-size: 1.87rem;
+    font-family: 'Cormorant Garamond';
+    padding-left: 30px;
+ } 
+ /*------------------------------------ PAGE LOGIN -------------------------------*/
+ .login{
+     text-align: center;
+ }
+ .login_form{
+    max-width: 1040px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .login_form_form{
+    width: 100%;
+}
+.login_form_inputs input{
+    width: 100%;
+    height: 88px;
+    margin-bottom: 77px;
+    border: 1px solid #D7B867;
+    background: transparent;
+}
+/*------------------------------------ PAGE MEMBER -------------------------------*/
+.sign-up{
+    text-align: center;
+}
+.sign-up_form{
+    width: 100%;
+    text-align: center;
+   
+}
+.sign-up_form_form{
+    max-width: 1040px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+.sign-up_form_form_inputs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+.sign-up_form_form_inputs input{
+    width: 45%;
+    max-width: 475px;
+    height: 88px;
+    border: 1px solid #D7B867;
+    background: transparent;
+    color: #D7B867;
+}
+.btn_input{
+    color: #D7B867;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.56rem;
+    padding: 10px;
+    border: 1px #D7B867 solid;
+    border-radius: 50px;
+    padding: 22px 42px;
+    line-height: 25px;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 100px;
+}
+.btn_input:hover{
+    color: #000;
+    background-image: url(../img/royal_1920.png);
 }
 
 /*---------------FOOTER-----------*/
