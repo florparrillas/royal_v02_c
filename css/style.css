@@ -39,6 +39,11 @@ body{
     color: #000;
     background-image: url(../img/royal_1920.png);
 }
+
+
+
+
+
 /*------------------HEADER------------------*/
 .header{
     background: rgb(0, 0, 0);
@@ -173,12 +178,21 @@ body{
     text-align: center;
     font-family: 'Cormorant Garamond';
     color: #D7B867;
-    font-size: 5.62rem;
     margin: 0 0 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+.title-section h3{
+    font-size: 5.6rem;
+    font-weight: normal;
+    align-items: center;
+    display: block;
+    margin: 0;
+    padding: 0 55px;
+    line-height: 120px;
+    
 }
 
 .title-section_line_left, .title-section_line_right{
@@ -204,6 +218,15 @@ body{
 .title-section_line_right::after{
     left: -25px;
 }
+/*Pading top Title*/
+.pad_top_title {
+    align-items: flex-start
+}
+
+.pad_top_title  .title-section_line_left,
+.pad_top_title  .title-section_line_right {
+    margin-top: 60px
+}
 .product_card_cards{
     width: 100%;
     display: flex;
@@ -219,7 +242,7 @@ body{
 .product_card_cards_front{
     width: 576px;
     position: relative;
-    z-index: 100;
+    z-index: 90;
 }
 .product_card_cards_back{
     width: 470px;
@@ -594,6 +617,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-family: 'Cormorant Garamond';
     font-size: 1.8rem;
     color: #000;
+    cursor: pointer;
 }
 .info_contact{
     display: flex;
