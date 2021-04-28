@@ -40,10 +40,6 @@ body{
     background-image: url(../img/royal_1920.png);
 }
 
-
-
-
-
 /*------------------HEADER------------------*/
 .header{
     background: rgb(0, 0, 0);
@@ -84,7 +80,10 @@ body{
     border: 2px solid #D7B867;
     padding: 10px 24px;
 }
-
+.menu-mobile{
+    display: none;
+}
+/*------------------------------------ PAGE HOME -------------------------------*/
 /*Sec. Welcome Page*/
 .welcome-page{
     height: 910px;
@@ -301,21 +300,25 @@ body{
     padding-bottom: 210px;
 }
 .benefits_associating_c_items{
-    padding-top: 200px;
-    padding-bottom: 180px;
+    /* padding-top: 200px;
+    padding-bottom: 180px; */
+
 }
 .benefits_associating_c_items_ul{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     list-style: none;
     padding: 0 95px;
+    width: 100%;
 }
 .benefits_associating_c_items_ul li{
     color: #D7B867;
     font-size: 2.5rem;
     font-family: 'Cormorant Garamond';
     padding: 0 23px;
+    max-width: 300px;
+    width: 100%;
 }
 .benefits_associating_c_items_ul li img{
     width: 100%;
@@ -412,25 +415,24 @@ body{
     height: 51px;
 }
 .package_details_silver{
-    width: 100%;
-    max-width: 420px;
+    /* width: 100%; */
+    width: 420px;
     height: 640px;
     background: linear-gradient(0.30turn, #92a7aa, #f3f3f3, #2c4246);
     text-align: center;
     position: relative;
 }
 .package_details_golden{
-    width: 100%;
-    max-width: 466px;
+    /* width: 100%; */
+    width: 466px;
     height: 705px;
     background: linear-gradient(0.30turn, #8f6c29, #ecd996, #2f2412);
     text-align: center;
     position: relative;
-    z-index: 80;
 }
 .package_details_bronze{
-    width: 100%;
-    max-width: 420px;
+    /* width: 100%; */
+    width: 420px;
     height: 640px;
     background: linear-gradient(0.30turn, #68452c, #e7c7b0, #301b12);
     text-align: center;
@@ -662,4 +664,481 @@ input[type=number]::-webkit-outer-spin-button {
     color: #D7B867;
     font-family: 'Cormorant Garamond';
     font-size: 1.8rem;
+}
+
+/*------ MEDIA QUERIE MAX 1300PX ------*/
+@media (max-width: 1300px){
+    /*------------------HEADER------------------*/
+.header_img{
+    height: 100px;
+    width: 100%;
+}
+.header_c_nav{
+    height: 71px;
+}
+
+.header_nav a{
+    font-size: 1rem;
+}
+.main{
+    padding-top: 171px;
+}
+.section_info{
+    font-size: 1.87rem;
+    padding: 61px 0 117px 0;
+}
+.w_paragraph {
+    max-width: 970px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+.title-section h3{
+    font-size: 4.3rem;
+    line-height: 70px;
+    
+}
+.btn_background_gold a{
+  
+    font-size: 1.12rem;
+   
+}
+/*Sec. Welcome Page*/
+.welcome-page{
+    height: 814px;
+} 
+.welcome-page_img_welcome{
+    height: 101px;
+}
+.welcome-page_img_welcome h2{
+    font-size: 3.12rem;
+}
+.welcome-page_info_btn{
+    margin-top: 31px;
+}
+.welcome-page_info_btn h1{
+    font-size: 7.5rem;
+}
+.welcome-page_info_btn p{
+    font-size: 2.5rem;
+}
+/*------------------------------------ PAGE HOME -------------------------------*/
+
+/*Unique Product Cards*/
+.product_card_cards{
+    max-width: 850px;
+}
+.product_card_cards_front{
+    width: 400px;
+    position: relative;
+    z-index: 90;
+}
+.product_card_cards_back{
+    width: 376px;
+    height: 215px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: all .5s ease;
+    position: relative;
+}
+.background_sections_trail{
+    background-image: url(../img/bg-section-1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    width: 100%;
+}
+.product_card_cards_back:hover{
+    transform: rotate(00deg);
+    width: 400px;
+    height: auto;
+    /* height: 329px; */
+}
+
+/**/
+
+.benefits_associating_c_items_ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0 95px;
+}
+.benefits_associating_c_items_ul li{
+    color: #D7B867;
+    font-size: 1.56rem;
+    font-family: 'Cormorant Garamond';
+    padding: 0 23px;
+    max-width: 20%;
+    width: 100%;
+}
+
+.benefits_associating_c_items_ul li img{
+    width: 100%;
+    max-width: 137px;
+    transform: translateX(10%);
+}
+.explore_destinations_ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-bottom: 60px
+}
+.explore_destinations_ul li a {
+    width: 250px;
+    height: 250px;
+    max-width: 289px;
+}
+.explore_destinations_ul li a img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    transform: translate(4.7%, 4.7%)
+}
+.explore_destinations_ul li a span{
+    color: #fbf5a9;
+    font-size: 2.5rem;
+    line-height: 80px
+}
+/*------------------------------------ PAGE MEMBERSHIPS -------------------------------*/
+.package_details_all h3{
+    font-size: 4.37rem;
+}
+.package_details_ul{
+    font-size: 1.37rem;
+}
+.package_details_ul li img{
+    /* width: 100%; */
+    max-width: 33px;
+    height: 33px;
+}
+.package_details_silver{
+    width: 336px;
+    height: 508px;
+}
+.package_details_golden{
+    width: 377px;
+    height: 569px;
+    background: linear-gradient(0.30turn, #8f6c29, #ecd996, #2f2412);
+    text-align: center;
+    position: relative;
+}
+.package_details_bronze{
+    width: 336px;
+    height: 508px;
+    background: linear-gradient(0.30turn, #68452c, #e7c7b0, #301b12);
+    text-align: center;
+    position: relative;
+}
+.btn_contact{
+margin-top: 200px;
+position: relative;
+}
+
+.btn_contact a{
+    font-size: 1.12rem;
+    line-height: 18px;
+}
+
+/*FOOTER*/
+.footer_c_info{
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_c_info_form p{
+    font-size: 1.56rem;
+    margin-bottom: 11px;
+}
+.footer_c_info_form form {
+    margin-bottom: 30px;
+}
+.footer_c_info_form form input{
+    width: 340px;
+    height: 71px;
+    font-size: 1.56em;
+}
+.footer_c_info_form form button{
+    width: 128px;
+    height: 71px;
+    font-size: 1.56rem;
+}
+.info_contact p{
+    font-size: 1.56rem;
+}
+.footer_ul li a{
+    font-size: 1.56rem;
+}
+.footer_under{
+    height: 83px;
+}
+.footer_under div{
+    margin: 0 50px;
+}
+.footer_under_reserved{
+    font-size: 1.56rem;
+}
+.footer_under_termins a{
+    font-size: 1.56rem;
+}
+
+}
+@media (max-width: 700px){
+/*HEADER*/
+
+.menu-desktop{
+    display: none;
+}
+.header_img{
+    height: 79px;
+    width: 100%;
+}
+.menu-mobile{
+    display: block;
+    align-items: center;
+    width: 100%;
+    padding: 5px 18px;
+    background: rgb(0, 0, 0);
+    color: #D7B867;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.barra{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
+}
+.bnt_menu_mobile{
+    width: 34px;
+    padding: 2px 0;
+}
+.header_nav_mobile{
+    width: 100%;
+    
+    height: 100%;
+    /* display: flex; */
+    position: fixed;
+    left: -100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+.header_nav_mobile_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header_nav_mobile_div a{
+    display: block;
+    padding: 10px;
+    color: #D7B867;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: calc(10px + 2px) calc(24px + 2px);
+    }
+
+.header_nav_mobile_div a:hover{
+    border: 2px solid #D7B867;
+    padding: 10px 24px;
+}
+/*Sec. Welcome Page*/
+.welcome-page{
+    height: 592px;
+} 
+.welcome-page_img_welcome{
+    height: 58px;
+}
+.welcome-page_img_welcome h2{
+    font-size: 2.18rem;
+}
+.welcome-page_info_btn{
+    margin-top: 31px;
+}
+.welcome-page_info_btn h1{
+    font-size: 4rem;
+}
+.welcome-page_info_btn p{
+    font-size: 1.56rem;
+    max-width: 548px; 
+}
+.btn_background_gold{
+    margin-top: 67px;
+    
+}
+.btn_background_gold a{
+    font-size: 0.75rem;
+    padding: 22px 42px;
+    line-height: 25px;
+}
+.title-section h3{
+    font-size: 2.5rem;
+    line-height: 40px;
+    
+}
+/*Unique Product Cards*/
+.product_card_cards{
+    max-width: 630px;
+}
+.product_card_cards_front{
+    max-width: 306px;
+    position: relative;
+    z-index: 90;
+}
+.product_card_cards_back{
+    max-width: 279px;
+    height: 159px;
+}
+.product_card_cards_back:hover{
+    transform: rotate(00deg);
+    width: 306px;
+    height: auto;
+}
+.section_info{
+    font-size: 1.26rem;
+    padding: 61px 0 117px 0;
+}
+.w_paragraph {
+    max-width: 548px;
+    /* padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto */
+}
+.explore_destinations_ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-bottom: 46px;
+}
+.explore_destinations_ul li a {
+    width: 161px;
+    height: 161px;
+    max-width: 161px;
+}
+.explore_destinations_ul li a img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    /* transform: translate(4.7%, 4.7%); */
+}
+.explore_destinations_ul li a span{
+    color: #fbf5a9;
+    font-size: 1.56rem;
+    line-height: 25px;
+}
+/*Page contact*/
+.contact_form_form{
+    max-width: 514px;
+}
+.contact_form_form_inputs input{
+    width: 45%;
+    max-width: 238px;
+    height: 68px;
+}
+
+.contact_form_form_textarea textarea{
+    border: 1px solid #D7B867;
+    background: transparent;
+    color: #D7B867;
+    height: 173px;
+    width: 100%;
+    resize: none;
+}
+::-webkit-input-placeholder { 
+    color: #D7B867;
+    font-size: 1.25rem;
+    font-family: 'Cormorant Garamond';
+    padding-left: 30px;
+ } 
+ /*Page Login*/
+ .btn_input{
+   
+    font-size: 0.75rem;
+   width: 165px;
+  
+}
+/*FOOTER*/
+.footer_c_info{
+    max-width: 700px;
+}
+.footer_c_info_form p{
+    font-size: 1.12rem;
+    margin-bottom: 11px;
+}
+.footer_c_info_form form {
+    margin-bottom: 30px;
+}
+.footer_c_info_form form input{
+    width: 340px;
+    height: 71px;
+    font-size: 1rem;
+}
+.footer_c_info_form form button{
+    width: 128px;
+    height: 71px;
+    font-size: 1rem;
+}
+.info_contact p{
+    font-size: 1.12rem;
+}
+.footer_ul li a{
+    font-size: 1.12rem;
+}
+.footer_under{
+    height: 64px;
+}
+.footer_under div{
+    margin: 0 50px;
+}
+.footer_under_reserved{
+    font-size: 1.12rem;
+}
+.footer_under_termins a{
+    font-size: 1.12rem;
+}
+}
+
+@media (max-width: 350px){
+/*Sec. Welcome Page*/
+.welcome-page{
+    height: 458px;
+    width: 100%;
+} 
+.welcome-page_img_welcome{
+    height: 40px;
+}
+.welcome-page_img_welcome h2{
+    font-size: 2.18rem;
+}
+.welcome-page_info_btn{
+    margin-top: 31px;
+}
+.welcome-page_info_btn h1{
+    font-size: 4rem;
+}
+.welcome-page_info_btn p{
+    font-size: 1.56rem;
+    max-width: 548px; 
+}
+.btn_background_gold{
+    margin-top: 67px;
+    
+}
+.btn_background_gold a{
+    font-size: 0.75rem;
+    padding: 22px 42px;
+    line-height: 25px;
+}
+.title-section h3{
+    font-size: 2.5rem;
+    line-height: 40px;
+    
+}
+
 }
