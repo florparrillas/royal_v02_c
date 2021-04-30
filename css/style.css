@@ -16,12 +16,13 @@ body{
     padding-top: 257px;
 }
 .padd-section{
-    padding: 65px 0;
+    padding: 50px 0;
 }
-
+.marg-section_components{
+    margin: 100px 0;
+}
 .btn_background_gold{
-    margin-top: 67px;
-    
+    padding-top: 50px;
 }
 .btn_background_gold a{
     text-decoration: none;
@@ -82,6 +83,9 @@ body{
 }
 .menu-mobile{
     display: none;
+}
+.margin-sections{
+    margin: 150px 0;
 }
 /*------------------------------------ PAGE HOME -------------------------------*/
 /*Sec. Welcome Page*/
@@ -170,7 +174,6 @@ body{
 /*Sec Unique Product*/
 .product_card{
     text-align: center;
-    padding-bottom: 127px;
 }
 
 .title-section{
@@ -226,12 +229,19 @@ body{
 .pad_top_title  .title-section_line_right {
     margin-top: 60px
 }
+.background_sections_trail{
+    background-image: url(../img/bg-section-1.png);
+     background-repeat: no-repeat;
+    background-position: right;
+   /* background-size: cover; */
+    /* width: 100%; */
+}
 .product_card_cards{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 124px;
+    
     max-width: 1300px;
     /* padding-left: 15px;
     padding-right: 15px; */
@@ -251,13 +261,6 @@ body{
     transition: all .5s ease;
     position: relative;
 }
-.background_sections_trail{
-    background-image: url(../img/bg-section-1.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    width: 100%;
-}
 .product_card_cards_back:hover{
     transform: rotate(00deg);
     width: 576px;
@@ -265,10 +268,11 @@ body{
 }
 
 
+
+
 /*Sec. Choose Us*/
 .choose_us{
     text-align: center;
-    padding-bottom: 200px;
 }
 .section_info{
     width: 100%;
@@ -278,8 +282,6 @@ body{
     font-family: 'Cormorant Garamond';
     font-weight: normal;
     text-align: center;
-    /* padding: 15px 70px 70px */
-    padding: 61px 0 117px 0;
 }
 .w_paragraph {
     max-width: 1255px;
@@ -291,18 +293,11 @@ body{
 /*Sec. Explore World*/
 .explore_world{
     text-align: center;
-    padding-bottom: 210px;
 }
 
 /*Sec. Benefits*/
 .benefits_associating{
     text-align: center;
-    padding-bottom: 210px;
-}
-.benefits_associating_c_items{
-    /* padding-top: 200px;
-    padding-bottom: 180px; */
-
 }
 .benefits_associating_c_items_ul{
     display: flex;
@@ -329,18 +324,17 @@ body{
 /*Sec. Explore Destinations*/
 .explore_destinations{
     text-align: center;
-    padding-bottom: 190px;
 }
 .explore_destinations_ul{
     list-style: none;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    padding-bottom: 60px
+    
 }
 .explore_destinations_ul li a {
-    width: 362px;
-    height: 362px;
-    max-width: 362px;
+    width: 360px;
+    height: 360px;
+    max-width: 360px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -356,8 +350,11 @@ body{
 }
 .explore_destinations_ul li a span{
     color: #fbf5a9;
-    font-size: 50px;
-    line-height: 80px
+    
+    font-family: 'Cormorant Garamond';
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px
 }
 
 .explore_destinations_ul li a span:hover{
@@ -685,7 +682,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .section_info{
     font-size: 1.87rem;
-    padding: 61px 0 117px 0;
 }
 .w_paragraph {
     max-width: 970px;
@@ -884,6 +880,15 @@ position: relative;
 
 }
 @media (max-width: 700px){
+    .padd-section{
+        padding: 100px 0;
+    }
+    .marg-section_components{
+        margin: 100px 0;
+    }
+    .btn_background_gold{
+        padding-top: 100px;
+    }
 /*HEADER*/
 
 .menu-desktop{
@@ -897,7 +902,6 @@ position: relative;
     display: block;
     align-items: center;
     width: 100%;
-    padding: 5px 18px;
     background: rgb(0, 0, 0);
     color: #D7B867;
     position: fixed;
@@ -917,13 +921,13 @@ position: relative;
 }
 .header_nav_mobile{
     width: 100%;
-    
     height: 100%;
     /* display: flex; */
     position: fixed;
     left: -100%;
     background: rgba(0, 0, 0, 0.5);
     text-align: center;
+    padding: 5px 18px;
 }
 
 
@@ -946,6 +950,9 @@ position: relative;
 .header_nav_mobile_div a:hover{
     border: 2px solid #D7B867;
     padding: 10px 24px;
+}
+.main{
+    padding-top: 118px;
 }
 /*Sec. Welcome Page*/
 .welcome-page{
@@ -1104,6 +1111,9 @@ position: relative;
 }
 }
 
+
+
+
 @media (max-width: 350px){
 /*Sec. Welcome Page*/
 .welcome-page{
@@ -1124,7 +1134,7 @@ position: relative;
 }
 .welcome-page_info_btn p{
     font-size: 1.56rem;
-    max-width: 548px; 
+    max-width: 300px; 
 }
 .btn_background_gold{
     margin-top: 67px;
